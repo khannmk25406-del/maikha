@@ -54,10 +54,3 @@ class ProductService:
         ws = wb.active
         ws.delete_rows(index + 2)
         wb.save(FILE_PATH)
-    def search_product(self, keyword):
-        products, _ = self.get_products()
-        result = []
-        for p in products:
-            if keyword.lower() in p["name"].lower():
-                result.append(p)
-        return result
