@@ -3,7 +3,7 @@ import pandas as pd
 from openpyxl import Workbook
 from openpyxl import load_workbook
 FILE_PATH = "data/products.xlsx"
-LOW_STOCK = 2
+LOW_STOCK = 5
 class ProductService:
     def __init__(self):
         self.file = FILE_PATH
