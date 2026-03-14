@@ -13,7 +13,7 @@ from product_service import ProductService
             self.table_products.setItem(row, 2, QTableWidgetItem(p["color"]))
             self.table_products.setItem(row, 3, QTableWidgetItem(str(p["quantity"])))
             self.table_products.setItem(row, 4, QTableWidgetItem(str(p["price"])))
-            status = "Sắp hết" if p["quantity"] <= 2 else "Còn hàng"
+            status = "Sắp hết" if p["quantity"] <= 5 else "Còn hàng"
             self.table_products.setItem(row, 5, QTableWidgetItem(status))
     def open_add_dialog(self):
         dialog = AddProduct(self)
